@@ -4,20 +4,84 @@
 @gray: #bfbfbf;
 @white: #ffffff;
 
+@fira: "fira-sans", Helvetica, Arial, sans-serif;
+@light: 300;
+@medium: 500;
+
+@league: "league-gothic", Helvetica, Arial, sans-serif;
+
+/* MAIN */
+body {
+    font: @light 1em @fira; /* 16/16 */
+    color: @white;
+    background: @black;
+}
+
+em {font-style: italic;}
+
+h1 {
+    font: 5em @league; /* 80/16 */
+    text-transform: uppercase;
+    color: @gray;
+}
+
+h1 > em {color: @white;}
+
+h2 {
+    font: @light 1.375em @fira; /* 22/16 */
+    color: @gray;
+}
+
+h2 > em {color: @red;}
+
 /* HEADER */
 header {
     width: 100%;
     height: auto;
-    background: @black;
 }
 
-header > div {
-    display: block;
-    padding: 30px 0;
-    text-align: center;
+    header > div {
+        display: block;
+        padding: 30px 0;
+        text-align: center;
+    }
+
+        #logo {
+            margin: auto;
+            max-width: 500px;
+        }
+
+/* BANNER */
+#banner {
+    width: 100%;
+    height: auto;
+    background: url(../../images/robert_glasper_banner_bg.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-#logo {
-    margin: auto;
-    max-width: 500px;
+    #banner > div {
+        max-width: 1000px;
+        display: block;
+        padding: 100px 0 40px 0;
+        margin: auto;
+        text-align: center;
+    }
+
+        #video {
+            padding: 0 0 100px 0;
+        }
+
+/* DIRECTIONS */
+#directions {
+    width: 100%;
+    height: auto;
 }
+
+    #steps {
+        
+    }
+
+    #phone {
+        
+    }
