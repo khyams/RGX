@@ -65,18 +65,45 @@
                     <div id="col-1">
                         <h3>Share with friends</h3>
                         <ul id="social">
-                            <li id="facebookLink" class="icon">&#xe605;</li>
-                            <li id="twitterLink" class="icon">&#xe60c;</li>
-                            <li id="" class="icon">&#xe601;</li>
+                            <li id="facebookLink" class="icon"><a href="#">&#xe605;</a></li>
+                            <li id="googleLink" class="icon"><a href="#">&#xe60c;</a></li>
+                            <li id="twitterLink" class="icon"><a href="#">&#xe601;</a></li>
                         </ul>
+                        <script type="text/javascript">
+                            <!--
+                                document.getElementById('facebookLink').onclick = function() {
+                                  window.open(
+                                                'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&title=' + encodeURIComponent('Tell @robertglasper why you stand alone and you may be included in a video featuring Common #istandalonergx'),
+                                                'Share on Facebook',
+                                                'width=600, height=400, menubar=0, scrollbars=0, toolbar=0'
+                                  );
+                                }
+
+                                document.getElementById('twitterLink').onclick = function() {
+                                  window.open(
+                                                'http://twitter.com/home/?status=' + encodeURIComponent('Tell @robertglasper why you stand alone and you may be included in a video featuring Common #istandalonergx') + '+' + encodeURIComponent(document.URL) + '&via=@robertglasper',
+                                                'Share on Twitter',
+                                                'width=600, height=400, menubar=0, scrollbars=0, toolbar=0'
+                                  );
+                                }
+
+                                document.getElementById('googleLink').onclick = function() {
+                                  window.open(
+                                                'https://plus.google.com/share?url=' + encodeURIComponent(document.URL),
+                                                'Share on Google Plus',
+                                                'width=600, height=400, menubar=0, scrollbars=0, toolbar=0'
+                                  );
+                                }
+                            //-->
+                        </script>
                     </div>
                     <div id="col-2">
                         <h3>Check out <span>Black Radio 2</span></h3>
-                        <a href="https://itunes.apple.com/us/album/black-radio-2-deluxe-version/id689535525" target="_blank" class="button">Visit iTunes</a>
+                        <div class="button"><a href="https://itunes.apple.com/us/album/black-radio-2-deluxe-version/id689535525" target="_blank">Visit iTunes</a></div>
                     </div>
                     <div id="col-3">
                         <h3>Questions?</h3>
-                        <a href="mailto:istandalone.br2@gmail.com" target="_blank" class="button">Email Us</a>
+                        <div class="button"><a href="mailto:istandalone.br2@gmail.com" target="_blank">Email Us</a></div>
                     </div>
                 </div>
                 <ul id="footer-info">
@@ -87,6 +114,16 @@
             </div>
         </footer>
         <!-- END FOOTER -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore
+                (a,m)
+            })
+            (window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-54476807-2', 'auto');
+            ga('send', 'pageview');
+        </script>
     </body>
 
 </html>
