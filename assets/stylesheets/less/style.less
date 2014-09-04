@@ -12,6 +12,37 @@
 
 @league: "league-gothic", Helvetica, Arial, sans-serif;
 
+/* FONTS */
+@font-face {font-family: 'icons';
+	src:url('../../fonts/icons.eot?sw3x1e');
+	src:url('../../fonts/icons.eot?#iefixsw3x1e') format('embedded-opentype'),
+		url('../../fonts/icons.woff?sw3x1e') format('woff'),
+		url('../../fonts/icons.ttf?sw3x1e') format('truetype'),
+		url('../../fonts/icons.svg?sw3x1e#icons') format('svg');
+	font-weight: normal;
+	font-style: normal;}
+
+.icon, [class^="icon-"], [class*=" icon-"] {
+    font-family: 'icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;}
+
+.icon-facebook:before {content: "\e605";}
+.icon-googleplus:before {content: "\e60c";}
+.icon-twitter:before {content: "\e601";}
+.icon-play:before {content: "\e60a";}
+.icon-close:before {content: "\e606";}
+.icon-close-reverse:before {content: "\e602";}
+.icon-play2:before {content: "\e60e";}
+
 /* CLEAR */
 .group:before,
 .group:after {
@@ -132,7 +163,12 @@ header {
         text-align: center;
     }
 
-        #video {margin: 40px 0 0 0;}
+        #video,
+        video {
+            max-width: 660px;
+            height: auto;
+            margin: 40px 0 0 0;
+        }
 
 /* DIRECTIONS */
 #directions {
