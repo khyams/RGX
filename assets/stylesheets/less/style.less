@@ -30,6 +30,7 @@ body {
     font-family: @fira;
     font-size: 1em; /* 16/16 */
     font-weight: @light;
+    letter-spacing: 1px;
     color: @white;
     background: @black;
 }
@@ -50,6 +51,7 @@ h2 {
     font-family: @fira;
     font-size: 1.375em; /* 22/16 */
     font-weight: @light;
+    line-height: 150%;
     color: @gray;
     margin: 40px 0 0 0;
 }
@@ -145,66 +147,94 @@ header {
         margin: auto;
     }
 
-        #steps {
-            width: 66%; /* 660/1000 */
-            float: left;
-            margin: 0 20px 0 0;
-        }
-
-            #steps > ol {}
-
-                #steps > ol > li#step-one {
-                    width: 48.484848484848%; /* 320/660 */
-                    float: left;
-                    margin: 0 20px 0 0;
-                }
-
-                    #step-one::before {
-                        content: '1';
-                        font-family: @league;
-                        font-size: 1.125 em; /* 18/16 */
-                        border: solid 1px @white;
-                        padding: 5px 10px;
-                        -webkit-border-radius: 100%;
-                        -moz-border-radius: 100%;
-                        border-radius: 100%;
-                    }
-
-                    #step-one > span {
-                        font-weight: @medium;
-                        font-style: italic;
-                        color: @red;
-                    }
-
-                    #step-one > #example {
-                        font-weight: normal;
-                        color: @gray;
-                    }
-
-                #steps > ol > li#step-two {
-                    width: 48.484848484848%; /* 320/660 */
-                    float: left;
-                }
-
-                    #step-two::before {
-                        content: '2';
-                        font-family: @league;
-                        font-size: 1.125 em; /* 18/16 */
-                        border: solid 1px @white;
-                        padding: 5px 10px;
-                        -webkit-border-radius: 100%;
-                        -moz-border-radius: 100%;
-                        border-radius: 100%;
-                    }
-
-                    #step-two > a:hover {
-                        text-decoration: none;
-                        color: @red;
-                    }
-
-        #phone {
+        #step-one {
             width: 32%; /* 320/1000 */
             float: left;
+        }
+
+            #step-one p:before {
+                content: '1';
+                font-family: @league;
+                text-align: center;
+                line-height: 30px;
+                width: 30px;
+                height: 30px;
+                display: block;
+                border: solid 1px @white;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                border-radius: 15px;
+                position: absolute;
+                left: -45px
+            }
+
+        #step-two {
+            width: 32%; /* 320/1000 */
+            float: left;
+            font-size: 1.125 em; /* 18/16 */
+            padding: 0 0 0 20px;
+        }
+
+            #step-two p:before {
+                content: '2';
+                font-family: @league;
+                font-size: 1.125 em; /* 18/16 */
+                text-align: center;
+                line-height: 30px;
+                width: 30px;
+                height: 30px;
+                display: block;
+                border: solid 1px @white;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                border-radius: 15px;
+                position: absolute;
+                left: -45px;
+            }
+
+            #step-one p,
+            #step-two p {
+                font-size: 1.125em; /* 18/16 */
+                line-height: 150%;
+                position: relative;
+                margin: 0 0 0 45px;
+            }
+
+                #step-one p span {
+                    font-weight: @medium;
+                    font-style: italic;
+                    color: @red;
+                }
+
+                #example {
+                    font-weight: @light !important;
+                    font-style: italic;
+                    color: @gray !important;
+                    display: block;
+                    margin: 15px 0 0 0;
+                }
+
+                    #example span {
+                        display: inline-block;
+                        width: 50px;
+                        height: 150%;
+                        border-bottom: solid 1px @gray;
+                    }
+
+                #step-two a:hover {
+                    text-decoration: none;
+                    color: @red;
+                }
+
+        #diagram {
+            width: 32%; /* 320/1000 */
+            float: left;
+            padding: 0 0 0 10px;
+        }
+
+        #phone {
+            /*max-width: 310px;
+            height: auto;*/
         }
 
 /* ALERT */
@@ -225,6 +255,7 @@ header {
         #alert > div > p {
             font-size: 1.5em;
             font-weight: @medium;
+            color: @white;
         }
 
 /* FOOTER */
@@ -263,7 +294,7 @@ footer {
             #footer-info > li {
                 font-size: 0.75em; /* 12/16 */
                 display: inline;
-                margin: 0 50px 0 0;
+                margin: 0 3.125em 0 0; /* 50/16 */
             }
 
             #footer-info > li:last-child {margin: 0;}
