@@ -12,15 +12,20 @@
 
 /* MAIN */
 body {
-    font: @light 1em @fira; /* 16/16 */
+    font-family: @fira;
+    font-size: 1em; /* 16/16 */
+    font-weight: @light;
     color: @white;
     background: @black;
 }
 
 em {font-style: italic;}
 
+strong {font-weight: @medium;}
+
 h1 {
-    font: 5em @league; /* 80/16 */
+    font-family: @league;
+    font-size: 5em; /* 80/16 */
     text-transform: uppercase;
     color: @gray;
 }
@@ -28,7 +33,9 @@ h1 {
 h1 > em {color: @white;}
 
 h2 {
-    font: @light 1.375em @fira; /* 22/16 */
+    font-family: @fira;
+    font-size: 1.375em; /* 22/16 */
+    font-weight: @light;
     color: @gray;
 }
 
