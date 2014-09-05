@@ -217,9 +217,20 @@ header {
                 height: auto !important;
                 
                 @media screen {
-	                @media (max-width: 379px) {
-	                max-width: 360px;
-	                max-height: 203px;
+	                @media (min-width:380px) and (max-width:600px) {
+		                min-width: 512px;
+		                min-height: 288px;
+						height: 100%;
+	                }
+	                @media (min-width:380px) and (max-width:519px) {
+		                min-width: 432px;
+		                min-height: 243px;
+						height: 100%;
+	                }
+	                @media (max-width:379px) {
+		                min-width: 270px;
+		                min-height: 162px;
+						height: 100%;
 	                }
                 }
                 
