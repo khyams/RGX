@@ -203,6 +203,9 @@ header {
             height: auto;
             padding: 40px 0 0 0;
             margin: auto;
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+            box-sizing: border-box;         /* Opera/IE 8+ */
             
             @media screen {
                 @media (max-width:799px) {width: 100%;}
@@ -212,6 +215,14 @@ header {
             #video > video {
                 width: 100% !important;
                 height: auto !important;
+                
+                @media screen {
+	                @media (max-width: 379px) {
+	                max-width: 340px;
+	                max-height: 191px;
+	                }
+                }
+                
             }
 
 /* DIRECTIONS */
