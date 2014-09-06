@@ -1,6 +1,6 @@
 RGX
 ===
 
-Landing page for Robert Glasper Experiment's “I Stand Alone” campaign.
+Landing page for Robert Glasper Experiment's <em>I Stand Alone</em> campaign.
 
 Built by Prismatic
